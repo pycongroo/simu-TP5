@@ -1,0 +1,63 @@
+%% LyX 2.0.8.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[latin9]{inputenc}
+\usepackage{esint}
+\usepackage{babel}
+\begin{document}
+Por dato $f(x)$ es lineal
+
+$f(x)=mx+b$
+
+Obtenemos $b$:
+
+$f(45)=3f(15)$
+
+$45m+b=3(15m+b)$
+
+$45m+b=45m+3b$
+
+$b=0$
+
+Por propiedad de sumatoria de probabilidades:
+
+$\intop_{15}^{45}f(x)dx=1$
+
+Despejamos $m$:
+
+$\intop_{15}^{45}mxdx=1$
+
+$(\frac{mx^{2}}{2})_{15}^{45}=1$
+
+$\frac{m}{2}(45^{2}-15^{2})=1$
+
+$\frac{m}{2}1800=1$
+
+$m=\frac{1}{900}$
+
+Reemplazamos y obtenemos la funcion $f(x)$:
+
+$f(x)=\frac{x}{900}$
+
+Calculamos la función de probabilidad acumulada:
+
+$F(z)=\intop_{15}^{z}f(x)dx$
+
+$F(z)=\intop_{15}^{z}\frac{x}{900}dx$
+
+$F(z)=(\frac{x^{2}}{1800})_{15}^{z}$
+
+$F(z)=\frac{(z^{2}-15^{2})}{1800}$
+
+Calculamos la funcion inversa de probabilidad acumulada:
+
+$F(x)=\frac{(x^{2}-15^{2})}{1800}=y$
+
+Despejamos $x$, ya que $x=F^{-1}(y)$
+
+$x^{2}-15^{2}=1800y$
+
+$x^{2}=15^{2}(8y+1)$
+
+$F^{-1}(y)=x=15\sqrt{8y+1}$
+\end{document}
